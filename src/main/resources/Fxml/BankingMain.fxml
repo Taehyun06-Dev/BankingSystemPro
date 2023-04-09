@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="400.0" stylesheets="@../Css/BankingMain.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TaehyunDev.Ui.main.controllerMain">
+   <children>
+      <Pane fx:id="pane_deposit" layoutY="106.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #5ae68f;">
+         <children>
+            <Label layoutX="81.0" layoutY="121.0" text="입금" />
+            <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="82.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-cash-in-67.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_withdraw" layoutX="200.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #65e6f7;">
+         <children>
+            <Label layoutX="81.0" layoutY="121.0" text="출금" />
+            <ImageView fitHeight="36.0" fitWidth="37.0" layoutX="82.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-cash-withdrawal-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_search" layoutY="306.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e3cf7f;">
+         <children>
+            <Label layoutX="81.0" layoutY="124.0" text="조회" />
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="86.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-search-client-24.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pane_setting" layoutX="200.0" layoutY="306.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dc8eed;">
+         <children>
+            <Label layoutX="70.0" layoutY="125.0" text="값 입력" />
+            <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="87.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-settings-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Line endX="-54.0" endY="452.0" layoutX="254.0" layoutY="54.0" startX="-54.0" startY="52.0" />
+      <Line endX="439.0" endY="2.0" layoutX="-39.0" layoutY="304.0" startX="36.99998474121094" startY="3.0" />
+      <Label id="titleLabel" layoutX="73.0" layoutY="17.0" text="TH뱅킹" />
+      <Label layoutX="190.0" layoutY="37.0" text="V1.0" />
+      <ImageView layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/icons8-card-exchange-50.png" />
+         </image>
+      </ImageView>
+      <Line endX="300.0000305175781" layoutX="100.0" layoutY="106.0" startX="-100.0" />
+      <Line endX="300.0000305175781" endY="-1.0" layoutX="100.0" layoutY="507.0" startX="-100.0" />
+      <Label id="bottomLabel" layoutX="242.0" layoutY="519.0" text="DB 보호 솔루션 작동중" />
+      <Label id="smallLabel" layoutX="209.0" layoutY="81.0" text="ⓒ2023 TH. All rights reserved." />
+      <ImageView layoutX="209.0" layoutY="518.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/output-onlinegiftools.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

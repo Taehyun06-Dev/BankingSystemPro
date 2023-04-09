@@ -1,0 +1,63 @@
+.root{
+    -fx-background-color: #e6e6e1;
+}
+
+.label{
+    -fx-font-size: 20;
+    -fx-font-family: "Hancom Gothic";
+}
+
+#menuPane{
+
+}
+
+#gradientPane{
+    -fx-background-image: url("../Images/33.jpg");
+}
+
+#titleLabel{
+    -fx-font-size: 35;
+}
+
+#bottomLabel{
+    -fx-font-size: 15;
+}
+
+#smallLabel{
+    -fx-font-size: 13;
+}
+
+/*default*/
+
+.button {
+    -fx-background-color: #bdbcb9;
+    -fx-text-fill: #383838;
+    -fx-text-alignment: left;
+}
+
+.button:hover {
+    -fx-background-color: #bdbcb9;
+    -fx-text-fill: #000;
+}
+
+.button:pressed {
+    -fx-background-color: #bdbcb9;
+    -fx-text-fill: #364FCD;
+}
+
+
+.button2 {
+    -fx-background-color: #0C39FF;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+.button2:hover {
+    -fx-background-color: #0C3988;
+    -fx-text-fill: #FFF;
+}
+
+.button2:pressed {
+    -fx-background-color: #0C3400;
+    -fx-text-fill: #FFF;
+}

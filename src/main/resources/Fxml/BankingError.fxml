@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="gradientPane" prefHeight="286.0" prefWidth="548.0" stylesheets="@../Css/BankingMain.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TaehyunDev.Ui.main.controllerError">
+    <children>
+        <ImageView layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/icons8-security-shield-64.png" />
+            </image>
+        </ImageView>
+        <Label id="titleLabel" layoutX="69.0" layoutY="14.0" text="TH뱅킹" />
+        <Line endX="443.0" layoutX="104.0" layoutY="78.0" startX="-104.0" />
+        <Label id="smallLabel" layoutX="365.0" layoutY="263.0" text="ⓒ2023 TH. All rights reserved." />
+        <Label layoutX="187.0" layoutY="33.0" text="보안 솔루션 V1.0" />
+        <Button fx:id="btt_exit" layoutX="224.0" layoutY="245.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="99.0" text="종료" />
+      <TextArea fx:id="txt_errDetail" layoutX="19.0" layoutY="129.0" prefHeight="105.0" prefWidth="513.0" text="세부 내용 없음" />
+      <Label fx:id="lbl_errMsg" layoutX="69.0" layoutY="89.0" text="알 수 없는 오류" />
+      <Label layoutX="19.0" layoutY="89.0" text="오류:" />
+    </children>
+</AnchorPane>

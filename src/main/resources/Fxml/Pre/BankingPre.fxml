@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="gradientPane" prefHeight="286.0" prefWidth="548.0" stylesheets="@../../Css/BankingMain.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TaehyunDev.Ui.pre.controllerPre">
+   <children>
+      <ImageView layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/icons8-security-shield-64.png" />
+         </image>
+      </ImageView>
+      <Label id="titleLabel" layoutX="69.0" layoutY="14.0" text="TH뱅킹" />
+      <Line endX="443.0" layoutX="104.0" layoutY="78.0" startX="-104.0" />
+      <Label layoutX="68.0" layoutY="151.0" text="네트워크 연결상태" />
+      <Label id="smallLabel" layoutX="365.0" layoutY="263.0" text="ⓒ2023 TH. All rights reserved." />
+      <Label layoutX="68.0" layoutY="186.0" text="DB 무결성 확인" />
+      <Label layoutX="68.0" layoutY="116.0" text="시스템 준비" />
+      <Line endX="100.0" endY="-12.0" layoutX="-45.0" layoutY="221.0" startX="100.0" startY="-100.0" />
+      <Label layoutX="187.0" layoutY="33.0" text="보안 솔루션 V1.0" />
+      <Label id="smallLabel" layoutX="54.0" layoutY="228.0" text="잠시후 뱅킹이 실행됩니다. 기다려 주십시오." />
+      <ImageView fx:id="img_system" layoutX="244.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/icons8-ok-16.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_network" layoutX="244.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/icons8-close-16.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img_db" layoutX="244.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/icons8-ok-16.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
