@@ -2,6 +2,7 @@
 UI버전의 컴퓨터 실험 과제(뱅킹)
 
 
+[영상]
 #정상작동 및 기능 시험 
 https://user-images.githubusercontent.com/61714078/230925015-db9d88e2-7fac-44b7-9306-a541ddb5c075.mp4
 
