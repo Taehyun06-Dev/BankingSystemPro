@@ -11,3 +11,6 @@ https://user-images.githubusercontent.com/61714078/230925079-01cdbbf1-2d90-4555-
 # 설명 PDF
 [TH뱅킹 메뉴얼.pdf](https://github.com/Taehyun06-Dev/BankingSystemPro/files/11191397/TH.pdf)
 
+# Runnable Jar이 포함된 실행 압축파일
+run.bat을 실행하면 프로그램이 실행됩니다.
+[TH.zip](https://github.com/Taehyun06-Dev/BankingSystemPro/files/11194082/TH.zip)
