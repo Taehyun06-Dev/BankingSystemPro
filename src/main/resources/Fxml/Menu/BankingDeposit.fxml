@@ -31,14 +31,14 @@
                         <Image url="@../../Images/icons8-cash-in-67.png" />
                     </image>
                 </ImageView>
-                <TextField layoutX="131.0" layoutY="130.0" prefWidth="197.0" />
+                <TextField fx:id="txt_account" layoutX="131.0" layoutY="130.0" prefWidth="197.0" />
                 <Label layoutX="37.0" layoutY="128.0" text="계좌번호" />
                 <Label layoutX="55.0" layoutY="188.0" text="금액" />
-                <TextField layoutX="131.0" layoutY="190.0" prefHeight="22.0" prefWidth="197.0" />
-                <Button layoutX="264.0" layoutY="231.0" mnemonicParsing="false" text="입금하기" />
-                <TextArea layoutX="39.0" layoutY="337.0" prefHeight="49.0" prefWidth="295.0" />
+                <TextField fx:id="txt_money" layoutX="131.0" layoutY="190.0" prefHeight="22.0" prefWidth="197.0" />
+                <Button fx:id="btt_go" layoutX="264.0" layoutY="231.0" mnemonicParsing="false" text="입금하기" />
+                <TextArea fx:id="txt_result" layoutX="39.0" layoutY="337.0" prefHeight="49.0" prefWidth="295.0" />
                 <Label id="smallLabel" layoutX="37.0" layoutY="312.0" text="결과" />
-                <ImageView layoutX="344.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="img_home" layoutX="344.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../Images/icons8-home-screen-50.png" />
                     </image>

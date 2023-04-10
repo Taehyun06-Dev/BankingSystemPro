@@ -1,6 +1,6 @@
 package com.TaehyunDev.Ui.main;
 
-import com.TaehyunDev.utils.errorManager;
+import com.TaehyunDev.utils.managers.errorManager;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

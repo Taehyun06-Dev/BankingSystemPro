@@ -1,4 +1,4 @@
-package com.TaehyunDev.utils;
+package com.TaehyunDev.utils.managers;
 
 import java.net.URL;
 import java.net.URLConnection;

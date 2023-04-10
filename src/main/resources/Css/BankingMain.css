@@ -7,10 +7,6 @@
     -fx-font-family: "Hancom Gothic";
 }
 
-#menuPane{
-
-}
-
 #gradientPane{
     -fx-background-image: url("../Images/33.jpg");
 }

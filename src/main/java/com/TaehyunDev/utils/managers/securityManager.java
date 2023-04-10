@@ -1,18 +1,15 @@
-package com.TaehyunDev.utils;
-
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.Base64;
+package com.TaehyunDev.utils.managers;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
+import java.security.MessageDigest;
+import java.util.Arrays;
+import java.util.Base64;
 
 
 public class securityManager {
 
-    private final String secretKeyTH = "ssshhhhhhhhhhh!!!!";
+    private final String secretKeyTH = "THBANKDBSECURITY";
 
     public SecretKeySpec getKey(final String myKey) throws Exception{
         byte[] key;

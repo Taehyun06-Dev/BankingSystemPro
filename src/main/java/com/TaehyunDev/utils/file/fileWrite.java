@@ -1,7 +1,9 @@
-package com.TaehyunDev.utils;
+package com.TaehyunDev.utils.file;
 
 import com.TaehyunDev.Data.userAccount;
 import com.TaehyunDev.Data.userData;
+import com.TaehyunDev.utils.managers.errorManager;
+import com.TaehyunDev.utils.managers.securityManager;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,6 +11,7 @@ import java.io.ObjectOutputStream;
 import java.util.Map;
 
 public class fileWrite implements Runnable{
+
     @Override
     public void run() {
         userData data = new userData();
@@ -21,10 +24,8 @@ public class fileWrite implements Runnable{
             oos.close();
             fos.close();
         }catch (Exception e){
-            errorManager.errorMsg = "파일 작성중 에러";
-            errorManager.errorDetail = e.getMessage();
+            new errorManager("파일 작성중 에러", e.getMessage());
             e.printStackTrace();
-            new Updater().showError();
         }
     }
 }

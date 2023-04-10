@@ -25,20 +25,20 @@
         </ImageView>
       <Pane id="menuPane" layoutX="-1.0" layoutY="106.0" prefHeight="400.0" prefWidth="401.0">
          <children>
-            <Label id="titleLabel" layoutX="98.0" layoutY="14.0" text="입금" />
-            <ImageView layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <Label id="titleLabel" layoutX="98.0" layoutY="14.0" text="설정" />
+            <ImageView layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Images/icons8-cash-in-67.png" />
+                  <Image url="@../../Images/icons8-settings-50.png" />
                </image>
             </ImageView>
-            <TextField layoutX="131.0" layoutY="130.0" prefWidth="197.0" />
-            <Label layoutX="37.0" layoutY="128.0" text="계좌번호" />
-            <Label layoutX="55.0" layoutY="188.0" text="금액" />
-            <TextField layoutX="131.0" layoutY="190.0" prefHeight="22.0" prefWidth="197.0" />
-            <Button layoutX="264.0" layoutY="231.0" mnemonicParsing="false" text="입금하기" />
-            <TextArea layoutX="39.0" layoutY="337.0" prefHeight="49.0" prefWidth="295.0" />
+            <TextField fx:id="txt_account" layoutX="131.0" layoutY="120.0" prefWidth="197.0" />
+            <Label layoutX="37.0" layoutY="117.0" text="계좌번호" />
+            <Label layoutX="55.0" layoutY="159.0" text="잔액" />
+            <TextField fx:id="txt_balance" layoutX="131.0" layoutY="161.0" prefHeight="22.0" prefWidth="197.0" />
+            <Button fx:id="btt_go" layoutX="296.0" layoutY="276.0" mnemonicParsing="false" text="등록/수정 하기" />
+            <TextArea fx:id="txt_result" layoutX="39.0" layoutY="337.0" prefHeight="49.0" prefWidth="295.0" />
             <Label id="smallLabel" layoutX="37.0" layoutY="312.0" text="결과" />
-            <ImageView layoutX="344.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img_home" layoutX="344.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Images/icons8-home-screen-50.png" />
                </image>
@@ -46,6 +46,10 @@
             <Label id="smallLabel" layoutX="345.0" layoutY="54.0" text="메인화면" />
             <Line endX="303.0" layoutX="99.0" layoutY="90.0" startX="-100.0" />
             <Line endX="289.0" layoutX="112.0" layoutY="306.0" startX="-112.0" />
+            <TextField fx:id="txt_user" layoutX="131.0" layoutY="203.0" prefHeight="22.0" prefWidth="197.0" />
+            <Label layoutX="46.0" layoutY="200.0" text="고객명" />
+            <Label layoutX="37.0" layoutY="241.0" text="비밀번호" />
+            <TextField fx:id="txt_pass" layoutX="131.0" layoutY="243.0" prefHeight="22.0" prefWidth="197.0" />
          </children></Pane>
       <ImageView layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
          <image>

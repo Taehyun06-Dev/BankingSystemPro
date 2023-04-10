@@ -1,6 +1,9 @@
-package com.TaehyunDev.utils;
+package com.TaehyunDev.utils.managers;
 
 import com.TaehyunDev.Data.fileData;
+import com.TaehyunDev.Ui.stageManager;
+import com.TaehyunDev.utils.Updater;
+import com.TaehyunDev.utils.file.fileRead;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
@@ -18,19 +21,22 @@ public class processManager implements Runnable{
         Future<Boolean> networkStat = executorService.submit(new networkManager());
         Updater updater = new Updater();
         try{
-            Thread.sleep(2000);
+            Thread.sleep(1500);
             updater.setNetwork(networkStat.get());
-            Thread.sleep(2300);
-            final fileData data = dataStat.get();
-            final Boolean isValid = data.getIsValid();
+            Thread.sleep(2500);
+            fileData data = dataStat.get();
+            Boolean isValid = data.getIsValid();
             updater.setSystem(data.getStat());
             updater.setDBStat(isValid);
-            executorService.submit(new switchStage(isValid));
+            Thread.sleep(4000);
+            if(isValid){
+                new stageManager().switchStage("ui_Pre", "ui_Main");
+            }else{
+                new stageManager().switchStage("ui_Pre", "ui_Pre_Fail");
+            }
         }catch (Exception e){
-            errorManager.errorMsg = "init 단계 오류";
-            errorManager.errorDetail = e.getMessage();
-            updater.showError();
+            new errorManager("init 단계 오류", e.getMessage());
+            e.printStackTrace();
         }
-
     }
 }

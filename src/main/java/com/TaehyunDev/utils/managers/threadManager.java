@@ -1,11 +1,10 @@
-package com.TaehyunDev.utils;
+package com.TaehyunDev.utils.managers;
 
 
-import com.TaehyunDev.Data.fileData;
+import com.TaehyunDev.utils.file.fileWrite;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 public class threadManager {
     private static ExecutorService executorService;
@@ -14,9 +13,7 @@ public class threadManager {
         executorService = Executors.newFixedThreadPool(4);
     }
 
-    public void runPre(){
-        executorService.submit(new processManager(executorService));
-    }
+    public void runPre(){executorService.submit(new processManager(executorService));}
 
     public void saveData(){
         executorService.submit(new fileWrite());

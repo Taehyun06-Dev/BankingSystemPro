@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="gradientPane" prefHeight="286.0" prefWidth="548.0" stylesheets="@../Css/BankingMain.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TaehyunDev.Ui.main.controllerError">
+<AnchorPane id="gradientPane" prefHeight="286.0" prefWidth="548.0" stylesheets="@../../Css/BankingMain.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TaehyunDev.Ui.main.controllerError">
     <children>
         <ImageView layoutX="4.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../Images/icons8-security-shield-64.png" />
+                <Image url="@../../Images/icons8-security-shield-64.png" />
             </image>
         </ImageView>
         <Label id="titleLabel" layoutX="69.0" layoutY="14.0" text="TH뱅킹" />

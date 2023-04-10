@@ -7,9 +7,12 @@ public class userData{
 
     private static Map<Integer, userAccount> userDataMap = new HashMap<>();
 
-    public boolean registerData(Integer accountNum, Integer accountPass, Integer accountBalance, String userName){
+    public void registerData(Integer accountNum, Integer accountPass, Integer accountBalance, String userName){
         userDataMap.put(accountNum, new userAccount(accountPass, accountBalance, userName));
-        return true;
+    }
+
+    public void registerDataByAccount(Integer accountNum, userAccount account){
+        userDataMap.put(accountNum, account);
     }
 
     public userAccount getAccount(Integer accountNum){
@@ -18,6 +21,7 @@ public class userData{
         }
         return userDataMap.get(accountNum);
     }
+
 
     public void setTotalMap(Map<Integer, userAccount> dataMap){
         userDataMap = dataMap;

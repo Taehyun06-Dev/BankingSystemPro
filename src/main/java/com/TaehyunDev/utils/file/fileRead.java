@@ -1,8 +1,10 @@
-package com.TaehyunDev.utils;
+package com.TaehyunDev.utils.file;
 
 import com.TaehyunDev.Data.fileData;
 import com.TaehyunDev.Data.userAccount;
 import com.TaehyunDev.Data.userData;
+import com.TaehyunDev.utils.managers.securityManager;
+import com.TaehyunDev.utils.managers.threadManager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,27 +18,26 @@ import java.util.concurrent.Callable;
 public class fileRead implements Callable<fileData> {
 
     private Boolean validateFile() throws Exception {
-
         Path path = Paths.get(System.getProperty("user.dir") + "BankingData/data.ser");
         long fileMilli = Files.getLastModifiedTime(path).toMillis();
-
-        long decrpytMilli = Long.parseLong(new securityManager().decrypt
-                (new userData().getAccount(-999).getUserName().replaceAll("THDBS", "")));
-
+        long decrpytMilli;
+        try {
+            decrpytMilli = Long.parseLong(new securityManager().decrypt
+                    (new userData().getAccount(-999).getUserName().replaceAll("THDBS", "")));
+        }catch (Exception e){
+            return false;
+        }
         if(Math.abs(fileMilli - decrpytMilli) < 2000){
             return true;
         }else{
             return false;
         }
-
     }
 
     @Override
     public fileData call() throws Exception {
-
         File file = new File(System.getProperty("user.dir") + "BankingData/data.ser");
         userData data = new userData();
-
         if(!file.exists()){
             new File(System.getProperty("user.dir") + "BankingData").mkdir();
             file.createNewFile();
@@ -50,5 +51,4 @@ public class fileRead implements Callable<fileData> {
         fis.close();
         return new fileData(true, validateFile());
     }
-
 }
