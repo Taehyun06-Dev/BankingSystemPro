@@ -94,7 +94,6 @@ public class controllerSetting implements Initializable {
 
         btt_go.setOnMouseClicked(e->register());
         setIntOnlyField(new TextField[]{txt_account, txt_balance, txt_pass});
-
         reloadAutoComplete();
     }
 

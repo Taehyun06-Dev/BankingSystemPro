@@ -6,6 +6,7 @@ import javafx.animation.Interpolator;
 import javafx.animation.Transition;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -48,7 +49,7 @@ public class stageManager {
         }
         Platform.runLater(() -> {
             if (stageMap.containsKey(stageFrom) && stageMap.containsKey(stageTo)) {
-                stageMap.get(stageFrom).close();
+                stageMap.get(stageFrom).hide();
                 stageMap.get(stageTo).show();
             }
         });

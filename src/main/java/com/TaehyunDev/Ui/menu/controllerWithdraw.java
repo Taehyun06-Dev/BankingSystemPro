@@ -106,7 +106,6 @@ public class controllerWithdraw implements Initializable {
 
         btt_go.setOnMouseClicked(e -> withdraw());
         setIntOnlyField(new TextField[]{txt_money, txt_account, txt_pass});
-
         reloadAutoComplete();
     }
 

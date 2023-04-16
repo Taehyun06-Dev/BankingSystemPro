@@ -4,6 +4,8 @@ import com.TaehyunDev.Data.userAccount;
 import com.TaehyunDev.Data.userData;
 import com.TaehyunDev.Ui.stageManager;
 import com.TaehyunDev.utils.managers.threadManager;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -90,10 +92,8 @@ public class controllerDeposit implements Initializable {
             txt_result.setText("");
             new stageManager().switchStage("ui_Deposit", "ui_Main");
         });
-
         btt_go.setOnMouseClicked(e->deposit());
         setIntOnlyField(new TextField[]{txt_money, txt_account});
-
         reloadAutoComplete();
     }
 

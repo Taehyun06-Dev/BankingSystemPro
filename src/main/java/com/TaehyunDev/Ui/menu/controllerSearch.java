@@ -3,7 +3,6 @@ package com.TaehyunDev.Ui.menu;
 import com.TaehyunDev.Data.userAccount;
 import com.TaehyunDev.Data.userData;
 import com.TaehyunDev.Ui.stageManager;
-import com.TaehyunDev.utils.managers.threadManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -89,7 +88,6 @@ public class controllerSearch implements Initializable {
 
         btt_go.setOnMouseClicked(e->search());
         setIntOnlyField(new TextField[]{txt_pass, txt_account});
-
         reloadAutoComplete();
     }
 
